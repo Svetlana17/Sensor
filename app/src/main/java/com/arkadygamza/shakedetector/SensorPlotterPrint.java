@@ -136,6 +136,8 @@ public class SensorPlotterPrint {
         series.appendData(new DataPoint(getX(), value), true, MAX_DATA_POINTS);
     }
 
+
+
     public void setState(String s) {
         this.state = s;
     }
@@ -144,8 +146,8 @@ public class SensorPlotterPrint {
         this.incValue = v;
     }
     private long getX() {
-        return System.currentTimeMillis() - mStart;
-    }
+       return System.currentTimeMillis() - mStart;
+   }
 
     public void changeViewPort(int v) {
         this.VIEWPORT_SECONDS = v;

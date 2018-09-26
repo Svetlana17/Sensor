@@ -52,7 +52,7 @@ public class SensorPlotter {
 
         graphView.getViewport().setYAxisBoundsManual(true);
         graphView.getViewport().setMinY(-20);
-        graphView.getViewport().setMaxY(20);
+//        graphView.getViewport().setMaxY(20);
 
         graphView.getGridLabelRenderer().setHorizontalLabelsVisible(false);
         graphView.getGridLabelRenderer().setVerticalLabelsVisible(false);
@@ -166,7 +166,7 @@ public class SensorPlotter {
     }
 
     private void appendData(LineGraphSeries<DataPoint> series, double value) {
-        series.appendData(new DataPoint(getX(), value), true, MAX_DATA_POINTS);
+      series.appendData(new DataPoint(getX(), value), true, MAX_DATA_POINTS);
     }
 
     public void setState(String s) {
